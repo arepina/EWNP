@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#a9cffa">
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="New Button"
+        android:id="@+id/homesp"
+        android:src="@drawable/homepage"
+        android:background="#a9cffa"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/editruswordsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/homesp"
+        android:layout_toRightOf="@+id/rusword"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:hint="русский вариант слова">
+    </EditText>
+
+    <EditText
+        android:id="@+id/editengwordsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_alignTop="@+id/engword"
+        android:layout_alignLeft="@+id/editruswordsp"
+        android:layout_alignStart="@+id/editruswordsp"
+        android:layout_alignBottom="@+id/engword"
+        android:gravity="center"
+        android:hint="english translation">
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Русский"
+        android:id="@+id/rusword"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/editruswordsp"
+        android:layout_alignBottom="@+id/editruswordsp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="English"
+        android:id="@+id/engword"
+        android:layout_below="@+id/rusword"
+        android:layout_alignLeft="@+id/rusword"
+        android:layout_alignStart="@+id/rusword"
+        android:layout_toLeftOf="@+id/editruswordsp"
+        android:layout_toStartOf="@+id/editruswordsp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sport"
+        android:id="@+id/textView"
+        android:textSize="35dp"
+        android:background="#a9cffa"
+        android:textColor="#000766"
+        android:layout_toRightOf="@+id/homesp"
+        android:layout_alignBottom="@+id/homesp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/homesp"
+        android:textAlignment="center"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addUser"
+        android:background="#73aae9"
+        android:text="Add"
+        android:layout_toRightOf="@+id/editengwordsp"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignTop="@+id/editruswordsp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignBottom="@+id/editengwordsp" />
+
+    <ListView
+        android:id="@+id/objectslistsp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button">
+    </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Swipe from right to left and press the delete button to delete the item"
+        android:id="@+id/textView3"
+        android:textAlignment="textStart"
+        android:textSize="16dp"
+        android:textColor="#000766"
+        android:layout_alignLeft="@+id/engword"
+        android:layout_alignStart="@+id/engword"
+        android:layout_below="@+id/editengwordsp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.anast.ewnp.ThemeChoosing"
+        android:background="#a9cffa">
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="New Button"
+        android:id="@+id/homethemecoo"
+        android:src="@drawable/homepage"
+        android:background="#a9cffa"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000766"
+            android:text="Choose the topic"
+            android:textSize="40dp"
+            android:background="#a9cffa"
+            android:id="@+id/textTopic"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:layout_weight="1" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+            <Button
+                android:id="@+id/technobut"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_row="0"
+                android:text="Technologies"
+                android:layout_gravity="center"
+                android:background="#73aae9"
+                android:textSize="23dp"
+                android:textColor="#ffffff" />
+            <Button
+                android:id="@+id/sportbut"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_row="0"
+                android:layout_marginLeft="10dp"
+                android:text="Sport"
+                android:layout_gravity="center"
+                android:background="#73aae9"
+                android:textSize="23dp"
+                android:layout_column="1"
+                android:textColor="#ffffff" />
+            <Button
+                android:id="@+id/ecobut"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_row="0"
+                android:layout_marginLeft="10dp"
+                android:text="Environment"
+                android:layout_gravity="center"
+                android:background="#73aae9"
+                android:textSize="23dp"
+                android:layout_column="2"
+                android:textColor="#ffffff" />
+        </TableRow>
+
+
+
+    </TableLayout>

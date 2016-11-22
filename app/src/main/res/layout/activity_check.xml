@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+tools:context="com.example.anast.ewnp.CheckActivity"
+android:background="#a9cffa">
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="New Button"
+        android:id="@+id/homecheck"
+        android:src="@drawable/homepage"
+        android:layout_alignBottom="@+id/myidtextView1"
+        android:background="#a9cffa"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="55dp"
+    android:textColor="#000766"
+    android:text="Theme"
+    android:textSize="35dp"
+    android:background="#a9cffa"
+    android:id="@+id/myidtextView1"
+    android:layout_gravity="center"
+    android:foregroundGravity="center"
+    android:gravity="center"
+        android:layout_toRightOf="@+id/homecheck"
+        android:textAlignment="center"
+        android:layout_toLeftOf="@+id/helpbut"
+        android:layout_toStartOf="@+id/helpbut"
+        android:layout_toEndOf="@+id/homecheck" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000766"
+        android:text="rustextcheck"
+        android:textSize="40dp"
+        android:background="#a9cffa"
+        android:id="@+id/rustext1"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toRightOf="@+id/nextbut1"
+        android:layout_toLeftOf="@+id/nextbut1"
+        android:layout_toStartOf="@+id/nextbut1"
+        android:paddingTop="0dp"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/nextbut1" />
+
+    <ImageButton
+        android:id="@+id/helpbut"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="#a9cffa"
+        android:src="@drawable/question"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:layout_column="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/nextbut1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_row="0"
+        android:layout_gravity="center"
+        android:background="#a9cffa"
+        android:src="@drawable/right"
+        android:textSize="30dp"
+        android:layout_column="1"
+        android:textColor="#ffffff"
+        android:layout_alignRight="@+id/helpbut"
+        android:layout_alignEnd="@+id/helpbut"
+        android:layout_below="@+id/helpbut" />
+
+    <EditText
+        android:layout_width="425dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/checktext"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:layout_alignBottom="@+id/nextbut1"
+        android:layout_toLeftOf="@+id/nextbut1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

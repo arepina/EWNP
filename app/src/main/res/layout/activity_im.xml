@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#a9cffa">
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="New Button"
+        android:id="@+id/homeim"
+        android:src="@drawable/homepage"
+        android:background="#a9cffa"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/editruswordim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/homeim"
+        android:layout_toRightOf="@+id/rusword"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:hint="русский вариант слова">
+    </EditText>
+
+    <EditText
+        android:id="@+id/editengwordim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_alignTop="@+id/engword"
+        android:layout_alignLeft="@+id/editruswordim"
+        android:layout_alignStart="@+id/editruswordim"
+        android:layout_alignBottom="@+id/engword"
+        android:gravity="center"
+        android:hint="english translation">
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Русский"
+        android:id="@+id/rusword"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/editruswordim"
+        android:layout_alignBottom="@+id/editruswordim"
+        android:layout_marginLeft="20dp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="English"
+        android:id="@+id/engword"
+        android:layout_below="@+id/rusword"
+        android:layout_alignLeft="@+id/rusword"
+        android:layout_alignStart="@+id/rusword"
+        android:layout_toLeftOf="@+id/editruswordim"
+        android:layout_toStartOf="@+id/editruswordim"
+        android:gravity="center"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Swipe from right to left and press the delete button to delete the item"
+        android:id="@+id/textView2"
+        android:textAlignment="textStart"
+        android:textSize="16dp"
+        android:textColor="#000766"
+        android:layout_below="@+id/editengwordim"
+        android:layout_alignLeft="@+id/engword"
+        android:layout_alignStart="@+id/engword"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Internet and Mass-media"
+        android:id="@+id/textView"
+        android:textSize="35dp"
+        android:background="#a9cffa"
+        android:textColor="#000766"
+        android:layout_toRightOf="@+id/homeim"
+        android:layout_alignBottom="@+id/homeim"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/homeim"
+        android:textAlignment="center"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addUser"
+        android:background="#73aae9"
+        android:text="Add"
+        android:layout_toRightOf="@+id/editengwordim"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignTop="@+id/editruswordim"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignBottom="@+id/editengwordim" />
+
+
+
+    <ListView
+        android:id="@+id/objectslistim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button">
+    </ListView>
+
+</RelativeLayout>
